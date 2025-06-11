@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form>
+        <div id="t">
+            <div id="it">
+                <input type="text" id="res" readonly>
+            </div>
+            <br>
+            <div class="container">
+                <input type="button" value="C" onclick="clearScreen()" id="clear">
+                <input type="button" value="←" onclick="back()" id="backspace">
+                <input type="button" value="%" onclick="solve('%')">
+                <input type="button" value="/" onclick="solve('/')">
+                <br><br>
+                <input type="button" value="7" onclick="solve('7')">
+                <input type="button" value="8" onclick="solve('8')">
+                <input type="button" value="9" onclick="solve('9')">
+                <input type="button" value="x" onclick="solve('*')">
+                <br><br>
+                <input type="button" value="4" onclick="solve('4')">
+                <input type="button" value="5" onclick="solve('5')">
+                <input type="button" value="6" onclick="solve('6')">
+                <input type="button" value="+" onclick="solve('+')">
+                <br><br>
+                <input type="button" value="1" onclick="solve('1')">
+                <input type="button" value="2" onclick="solve('2')">
+                <input type="button" value="3" onclick="solve('3')">
+                <input type="button" value="-" onclick="solve('-')">
+                <br><br>
+                <input type="button" value="0" onclick="solve('0')">
+                <input type="button" value="." onclick="solve('.')">
+                <input type="button" value="=" onclick="calculate()">
+            </div>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
